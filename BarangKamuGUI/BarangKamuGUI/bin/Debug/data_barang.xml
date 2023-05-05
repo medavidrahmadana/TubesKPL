@@ -1,0 +1,11 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <dataBarang>
+    <NamaBarang>Pensil</NamaBarang>
+    <JumlahBarang>10</JumlahBarang>
+  </dataBarang>
+  <dataBarang>
+    <NamaBarang>Buku</NamaBarang>
+    <JumlahBarang>5</JumlahBarang>
+  </dataBarang>
+</DocumentElement>

@@ -1,0 +1,11 @@
+F:\KPL\BarangKamuGUI\BarangKamuGUI\bin\Debug\BarangKamuGUI.exe.config
+F:\KPL\BarangKamuGUI\BarangKamuGUI\bin\Debug\BarangKamuGUI.exe
+F:\KPL\BarangKamuGUI\BarangKamuGUI\bin\Debug\BarangKamuGUI.pdb
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.csproj.AssemblyReference.cache
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.csproj.SuggestedBindingRedirects.cache
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.Form1.resources
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.Properties.Resources.resources
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.csproj.GenerateResource.cache
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.csproj.CoreCompileInputs.cache
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.exe
+F:\KPL\BarangKamuGUI\BarangKamuGUI\obj\Debug\BarangKamuGUI.pdb
