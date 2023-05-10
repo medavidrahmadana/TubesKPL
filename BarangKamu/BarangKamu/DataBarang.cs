@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace BarangKamu
 {
+    
+
     class Barang
     {
         public string NamaBarang { get; set; }
@@ -23,6 +26,7 @@ namespace BarangKamu
 
     class DataBarang
     {
+        // Teknik Code reuse/library
         private List<Barang> daftarBarang;
 
         public DataBarang()
@@ -51,6 +55,8 @@ namespace BarangKamu
             }
         }
 
+        
+
         public void SaveData()
         {
             // Menuliskan data barang ke file
@@ -64,21 +70,38 @@ namespace BarangKamu
             }
         }
 
+        // Teknik Runtime configuration
+
         public void TambahBarang()
         {
-            // Menambah barang
             Console.WriteLine("===== Tambah Barang =====");
             Console.Write("Masukkan nama barang: ");
             string namaBarang = Console.ReadLine();
-            Console.Write("Masukkan jumlah barang: ");
-            int jumlahBarang = int.Parse(Console.ReadLine());
-            Barang barangBaru = new Barang(namaBarang, jumlahBarang);
-            daftarBarang.Add(barangBaru);
-            Console.WriteLine();
-            Console.WriteLine("Note: Barang berhasil ditambahkan.");
-            SaveData(); // Menyimpan perubahan ke dalam file
+
+            if (string.IsNullOrWhiteSpace(namaBarang))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Data barang tidak boleh kosong!");
+            }
+            else if (daftarBarang.Any(barang => barang.NamaBarang == namaBarang))
+            {
+                Console.WriteLine();
+                Console.WriteLine("Barang dengan nama tersebut sudah ada dalam daftar.");
+            }
+            else
+            {
+                Console.Write("Masukkan jumlah barang: ");
+                int jumlahBarang = int.Parse(Console.ReadLine());
+                Barang barangBaru = new Barang(namaBarang, jumlahBarang);
+                daftarBarang.Add(barangBaru);
+                Console.WriteLine();
+                Console.WriteLine("Note: Barang berhasil ditambahkan.");
+                SaveData();
+            }
         }
 
+
+        // Teknik Runtime configuration
         public void TampilkanBarang()
         {
             // Menampilkan daftar barang
@@ -96,6 +119,8 @@ namespace BarangKamu
                 }
             }
         }
+
+        // Teknik Runtime configuration
         public void UbahBarang()
         {
             // Mengubah barang
@@ -121,6 +146,7 @@ namespace BarangKamu
             }
         }
 
+        // Teknik Runtime configuration
         public void HapusBarang()
         {
             // Menghapus barang
@@ -140,6 +166,8 @@ namespace BarangKamu
                 SaveData(); // Menyimpan perubahan ke dalam file
             }
         }
+
+        // Teknik Runtime configuration
         public void HapusSemuaBarang()
         {
             // Menghapus seluruh data dalam file

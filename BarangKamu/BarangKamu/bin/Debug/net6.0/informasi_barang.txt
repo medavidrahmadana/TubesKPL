@@ -1,4 +1,2 @@
-Kaos | 5
-Jeans | 2
-BH | 1
-Sempak | 2
+kaos | 2
+kitab | 1

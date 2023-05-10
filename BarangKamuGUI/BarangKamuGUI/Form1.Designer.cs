@@ -40,6 +40,7 @@
             this.JumlahBarang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.deleteAll = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataBarang)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(119, 176);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 13);
@@ -72,6 +74,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(114, 210);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 13);
@@ -145,12 +148,22 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(476, 128);
+            this.label3.Location = new System.Drawing.Point(449, 128);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 24);
+            this.label3.Size = new System.Drawing.Size(167, 24);
             this.label3.TabIndex = 11;
-            this.label3.Text = "Data Barang";
+            this.label3.Text = "Data Barang Gweh";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Location = new System.Drawing.Point(100, 115);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(251, 226);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Input Data Barang";
             // 
             // Form1
             // 
@@ -167,6 +180,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.inputJumlah);
             this.Controls.Add(this.inputNama);
+            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -190,6 +204,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn JumlahBarang;
         private System.Windows.Forms.Button deleteAll;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
