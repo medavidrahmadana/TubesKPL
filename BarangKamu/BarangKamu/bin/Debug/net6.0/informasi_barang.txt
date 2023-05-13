@@ -1,2 +1,3 @@
 kaos | 2
 kitab | 1
+tali | 2

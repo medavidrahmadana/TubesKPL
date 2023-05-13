@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.Json;
 
 namespace BarangKamu
 {
-    
 
-    class Barang
+
+    public class Barang
     {
         public string NamaBarang { get; set; }
         public int JumlahBarang { get; set; }
@@ -24,53 +25,36 @@ namespace BarangKamu
         }
     }
 
-    class DataBarang
+    public class DataBarang
     {
-        // Teknik Code reuse/library
-        private List<Barang> daftarBarang;
+
+        public List<Barang> daftarBarang;
 
         public DataBarang()
         {
             daftarBarang = new List<Barang>();
         }
 
+        // Teknik Runtime configuration
         public void LoadData()
         {
-            // Membaca file informasi barang
-            string path = "informasi_barang.txt";
+            string path = "informasi_barang.json";
             if (File.Exists(path))
             {
-                using (StreamReader reader = new StreamReader(path))
-                {
-                    string line;
-                    while ((line = reader.ReadLine()) != null)
-                    {
-                        string[] data = line.Split('|');
-                        string namaBarang = data[0].Trim();
-                        int jumlahBarang = int.Parse(data[1].Trim());
-                        Barang barang = new Barang(namaBarang, jumlahBarang);
-                        daftarBarang.Add(barang);
-                    }
-                }
+                string json = File.ReadAllText(path);
+                daftarBarang = JsonSerializer.Deserialize<List<Barang>>(json);
             }
         }
-
-        
 
         public void SaveData()
         {
-            // Menuliskan data barang ke file
-            string path = "informasi_barang.txt";
-            using (StreamWriter writer = new StreamWriter(path))
+            string path = "informasi_barang.json";
+            string json = JsonSerializer.Serialize(daftarBarang, new JsonSerializerOptions
             {
-                foreach (Barang barang in daftarBarang)
-                {
-                    writer.WriteLine($"{barang.NamaBarang} | {barang.JumlahBarang}");
-                }
-            }
+                WriteIndented = true
+            });
+            File.WriteAllText(path, json);
         }
-
-        // Teknik Runtime configuration
 
         public void TambahBarang()
         {
@@ -100,8 +84,6 @@ namespace BarangKamu
             }
         }
 
-
-        // Teknik Runtime configuration
         public void TampilkanBarang()
         {
             // Menampilkan daftar barang
@@ -120,7 +102,6 @@ namespace BarangKamu
             }
         }
 
-        // Teknik Runtime configuration
         public void UbahBarang()
         {
             // Mengubah barang
@@ -146,7 +127,6 @@ namespace BarangKamu
             }
         }
 
-        // Teknik Runtime configuration
         public void HapusBarang()
         {
             // Menghapus barang
@@ -167,7 +147,6 @@ namespace BarangKamu
             }
         }
 
-        // Teknik Runtime configuration
         public void HapusSemuaBarang()
         {
             // Menghapus seluruh data dalam file

@@ -35,9 +35,9 @@ namespace BarangKamu.UnitTest
             dataBarang.TambahBarang();
 
             // Assert
-            Assert.AreEqual(1, dataBarang.DaftarBarang.Count);
-            Assert.AreEqual(namaBarang, dataBarang.DaftarBarang[0].NamaBarang);
-            Assert.AreEqual(jumlahBarang, dataBarang.DaftarBarang[0].JumlahBarang);
+            Assert.AreEqual(1, dataBarang.daftarBarang.Count);
+            Assert.AreEqual(namaBarang, dataBarang.daftarBarang[0].NamaBarang);
+            Assert.AreEqual(jumlahBarang, dataBarang.daftarBarang[0].JumlahBarang);
         }
 
         [Test]
@@ -47,15 +47,15 @@ namespace BarangKamu.UnitTest
             string namaBarang = "Buku";
             int jumlahBarang = 5;
             Barang barang = new Barang(namaBarang, jumlahBarang);
-            dataBarang.DaftarBarang.Add(barang);
+            dataBarang.daftarBarang.Add(barang);
 
             // Act
             dataBarang.TambahBarang();
 
             // Assert
-            Assert.AreEqual(1, dataBarang.DaftarBarang.Count);
-            Assert.AreEqual(namaBarang, dataBarang.DaftarBarang[0].NamaBarang);
-            Assert.AreEqual(jumlahBarang, dataBarang.DaftarBarang[0].JumlahBarang);
+            Assert.AreEqual(1, dataBarang.daftarBarang.Count);
+            Assert.AreEqual(namaBarang, dataBarang.daftarBarang[0].NamaBarang);
+            Assert.AreEqual(jumlahBarang, dataBarang.daftarBarang[0].JumlahBarang);
         }
 
         [Test]
@@ -77,8 +77,8 @@ namespace BarangKamu.UnitTest
             // Arrange
             Barang barang1 = new Barang("Buku", 5);
             Barang barang2 = new Barang("Pensil", 10);
-            dataBarang.DaftarBarang.Add(barang1);
-            dataBarang.DaftarBarang.Add(barang2);
+            dataBarang.daftarBarang.Add(barang1);
+            dataBarang.daftarBarang.Add(barang2);
 
             // Act
             string result = CaptureConsoleOutput(() =>
@@ -96,7 +96,7 @@ namespace BarangKamu.UnitTest
         {
             // Arrange
             Barang barang = new Barang("Buku", 5);
-            dataBarang.DaftarBarang.Add(barang);
+            dataBarang.daftarBarang.Add(barang);
 
             string namaBarangBaru = "Buku Tulis";
             int jumlahBarangBaru = 3;
