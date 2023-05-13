@@ -1,12 +1,23 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text.Json;
 
 namespace BarangKamu
 {
-
+    //automata
+    public enum MenuOption
+    {
+        dashboard,
+        TambahBarang,
+        TampilkanBarang,
+        UbahBarang,
+        HapusBarang,
+        HapusSemuaBarang,
+        Keluar
+    }
 
     public class Barang
     {
@@ -154,6 +165,85 @@ namespace BarangKamu
             File.WriteAllText(path, string.Empty);
             daftarBarang.Clear();
             Console.WriteLine("Seluruh data berhasil dihapus.");
+        }
+    
+
+    public MenuOption ShowMenu()
+        {
+            Console.WriteLine("===== Menu =====");
+            Console.WriteLine("1. Tambah Barang");
+            Console.WriteLine("2. Tampilkan Barang");
+            Console.WriteLine("3. Ubah Barang");
+            Console.WriteLine("4. Hapus Barang");
+            Console.WriteLine("5. Hapus Semua Barang");
+            Console.WriteLine("6. Keluar");
+            Console.Write("Pilih menu (1-6): ");
+
+            string input = Console.ReadLine();
+            Debug.Assert(!string.IsNullOrEmpty(input), "Pilihan tidak valid. Silakan pilih menu yang sesuai.");
+            int selectedOption;
+            bool isValidOption = int.TryParse(input, out selectedOption);
+            Debug.Assert(isValidOption, "Pilihan tidak valid. Silakan pilih menu yang sesuai.");
+
+            if (isValidOption && Enum.IsDefined(typeof(MenuOption), selectedOption))
+            {
+                return (MenuOption)selectedOption;
+            }
+            else
+            {
+                Console.WriteLine();
+                Console.WriteLine("Pilihan cuma sampai 6 :) , Silakan pilih menu yang sesuai.");
+                Console.WriteLine();
+                Console.WriteLine("Tekan Enter untuk melanjutkan...");
+                Console.ReadLine();
+                Console.Clear();
+                return ShowMenu();
+            }
+        }
+
+        public void Run()
+        {
+            LoadData();
+
+            bool isRunning = true;
+            while (isRunning)
+            {
+                MenuOption option = ShowMenu();
+                Console.Clear();
+
+                Debug.Assert(Enum.IsDefined(typeof(MenuOption), option), "Pilihan tidak valid. Silakan pilih menu yang sesuai.");
+                switch (option)
+                {
+
+                    case MenuOption.dashboard:
+                        ShowMenu();
+                        Console.WriteLine("Tidak ada pilihan 0 itu lo :)");
+                        break;
+                    case MenuOption.TambahBarang:
+                        TambahBarang();
+                        break;
+                    case MenuOption.TampilkanBarang:
+                        TampilkanBarang();
+                        break;
+                    case MenuOption.UbahBarang:
+                        UbahBarang();
+                        break;
+                    case MenuOption.HapusBarang:
+                        HapusBarang();
+                        break;
+                    case MenuOption.HapusSemuaBarang:
+                        HapusSemuaBarang();
+                        break;
+                    case MenuOption.Keluar:
+                        isRunning = false;
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Tekan Enter untuk melanjutkan...");
+                Console.ReadLine();
+                Console.Clear();
+            }
         }
     }
 }

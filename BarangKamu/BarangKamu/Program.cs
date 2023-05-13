@@ -8,6 +8,15 @@ namespace BarangKamu
         static void Main(string[] args)
         {
             DataBarang dataBarang = new DataBarang();
+            dataBarang.Run();
+        }
+    }
+}
+    /*class Program
+    {
+        static void Main(string[] args)
+        {
+            DataBarang dataBarang = new DataBarang();
             dataBarang.LoadData();
 
             bool exit = false;
@@ -59,4 +68,4 @@ namespace BarangKamu
             }
         }
     }
-}
+}*/

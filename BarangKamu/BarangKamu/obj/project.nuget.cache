@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "kFKykq2JEazGu0B8RhI65+D6udJtoqbU1FmLT3929wtCrCMze+/lQWu+xXhSEveqL/WH/2GbUH0Xxl4+xJoW2w==",
+  "dgSpecHash": "AcLwc6eBQdFf1AbUCbaeu0ja0e9tuOL+AWhUEPVMviDcRh+eQfDGsw5mxTB2WEDaEOQk74o0/OiOPepxubqFbA==",
   "success": true,
   "projectFilePath": "F:\\KPL\\TubesKPL\\BarangKamu\\BarangKamu\\BarangKamu.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunitlite\\3.13.3\\nunitlite.3.13.3.nupkg.sha512"
+  ],
   "logs": []
 }

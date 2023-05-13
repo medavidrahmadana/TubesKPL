@@ -28,3 +28,12 @@ F:\KPL\TubesKPL\BarangKamu\BarangKamu\obj\Debug\net6.0\refint\BarangKamu.dll
 F:\KPL\TubesKPL\BarangKamu\BarangKamu\obj\Debug\net6.0\BarangKamu.pdb
 F:\KPL\TubesKPL\BarangKamu\BarangKamu\obj\Debug\net6.0\BarangKamu.genruntimeconfig.cache
 F:\KPL\TubesKPL\BarangKamu\BarangKamu\obj\Debug\net6.0\ref\BarangKamu.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\nunit.engine.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\nunit.engine.api.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\nunit.engine.core.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\testcentric.engine.metadata.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\nunit.framework.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\bin\Debug\net6.0\nunitlite.dll
+F:\KPL\TubesKPL\BarangKamu\BarangKamu\obj\Debug\net6.0\BarangKamu.csproj.CopyComplete

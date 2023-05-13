@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "tkm7NbRQj+AkCzeF4hBTR5R2WlgdDWvwITiUFt0jhOtF3YOxXPSciWl5hSiipA87pb3xE+xYr+vhVmJbQ0Zz7Q==",
+  "dgSpecHash": "Iifb7j1Kl6zHeKwUiQH6khENj3PUaQ5pKPXM0qjaYqTklvxT1vweaT4nGzSS3jm9zClhIDrYdmpnFDKBbmIoaQ==",
   "success": true,
   "projectFilePath": "F:\\KPL\\TubesKPL\\BarangKamu\\UnitTestingBarangKamu\\UnitTestingBarangKamu.csproj",
   "expectedPackageFiles": [
@@ -16,8 +16,9 @@
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\nunit.analyzers\\3.5.0\\nunit.analyzers.3.5.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\nunit3testadapter\\4.3.0\\nunit3testadapter.4.3.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\nunitlite\\3.13.3\\nunitlite.3.13.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.collections\\4.0.11\\system.collections.4.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.debug\\4.0.11\\system.diagnostics.debug.4.0.11.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\system.diagnostics.tools\\4.0.1\\system.diagnostics.tools.4.0.1.nupkg.sha512",

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using NUnit.Framework;
+using NUnitLite;
 
 namespace BarangKamu.UnitTest
 {
@@ -21,8 +22,10 @@ namespace BarangKamu.UnitTest
         [TearDown]
         public void TearDown()
         {
-            dataBarang.HapusSemuaBarang();
+            // Mengembalikan output konsol ke nilai semula
+            Console.SetOut(Console.Out);
         }
+
 
         [Test]
         public void TambahBarang_BarangBaru_DitambahkanKeDaftar()
@@ -61,15 +64,20 @@ namespace BarangKamu.UnitTest
         [Test]
         public void TampilkanBarang_DaftarBarangKosong_TampilkanPesan()
         {
+            // Simpan output konsol ke StringWriter
+            StringWriter stringWriter = new StringWriter();
+            Console.SetOut(stringWriter);
+
             // Act
-            string result = CaptureConsoleOutput(() =>
-            {
-                dataBarang.TampilkanBarang();
-            });
+            dataBarang.TampilkanBarang();
+
+            // Ambil output dari StringWriter
+            string output = stringWriter.ToString();
 
             // Assert
-            StringAssert.Contains("Data barang masih kosong", result);
+            StringAssert.Contains("Data barang masih kosong", output);
         }
+
 
         [Test]
         public void TampilkanBarang_DaftarBarangTidakKosong_TampilkanDaftarBarang()
@@ -128,3 +136,4 @@ namespace BarangKamu.UnitTest
         }
     }
 }
+
