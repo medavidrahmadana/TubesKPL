@@ -1,0 +1,14 @@
+[
+  {
+    "NamaBarang": "baju",
+    "JumlahBarang": 3
+  },
+  {
+    "NamaBarang": "ayam",
+    "JumlahBarang": 3
+  },
+  {
+    "NamaBarang": "",
+    "JumlahBarang": 0
+  }
+]

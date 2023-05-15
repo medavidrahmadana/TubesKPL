@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TubesKPL/1.0.0": {
+        "dependencies": {
+          "dataBarangLibrary": "1.0.0"
+        },
+        "runtime": {
+          "TubesKPL.dll": {}
+        }
+      },
+      "dataBarangLibrary/1.0.0": {
+        "runtime": {
+          "dataBarangLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TubesKPL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "dataBarangLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

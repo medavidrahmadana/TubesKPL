@@ -1,0 +1,12 @@
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.csproj.AssemblyReference.cache
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.AssemblyInfoInputs.cache
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.AssemblyInfo.cs
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\bin\Debug\net6.0\dataBarangLibrary.deps.json
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\bin\Debug\net6.0\dataBarangLibrary.dll
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\bin\Debug\net6.0\dataBarangLibrary.pdb
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.dll
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\refint\dataBarangLibrary.dll
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\dataBarangLibrary.pdb
+C:\Users\Rheins\Documents\KPL\TubesKPL\dataBarangLibrary\obj\Debug\net6.0\ref\dataBarangLibrary.dll
